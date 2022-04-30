@@ -13,8 +13,8 @@ class  HomePage extends StatelessWidget {
         title:const Text("Catalog App"),
       ),
         body: Center(
-          child: Container(
-            child: Text("Wlcome to $days days of $name"),
+          child: Container( 
+            child: Text(context.runtimeType.toString()),
           ),
         ),
         drawer: MyDrawer(),
