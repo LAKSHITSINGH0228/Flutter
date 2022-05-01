@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_null_comparison, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/models/catalog.dart';
 import 'package:flutter_catalog/widgets/themes.dart';
@@ -12,7 +14,9 @@ class HomeDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
       backgroundColor: MyTheme.creamColor,
       bottomNavigationBar: Container(
         color: Colors.white,
@@ -27,8 +31,8 @@ class HomeDetailPage extends StatelessWidget {
                   backgroundColor:
                       MaterialStateProperty.all(MyTheme.darkBluishColor),
                   shape: MaterialStateProperty.all(StadiumBorder())),
-              child: "Buy".text.make(),
-            ).wh(100, 50)
+              child: "Add to cart".text.make(),
+            ).wh(120, 50)
           ],
         ).p32(),
       ),
@@ -53,8 +57,13 @@ class HomeDetailPage extends StatelessWidget {
                         .color(MyTheme.darkBluishColor)
                         .bold
                         .make(),
-                    catalog.desc.text.xl.make(),
+                    catalog.desc.text.xl.bodyText1(context).make(),
                     10.heightBox,
+                    "Ipsum dolor eirmod no eirmod dolor et lorem sadipscing. Sed eirmod diam rebum amet dolores elitr, dolor dolore sea tempor vero lorem tempor."
+                        .text
+                        .bodyText1(context)
+                        .make()
+                        .p16()
                   ]).py64(),
                 ),
               ),
