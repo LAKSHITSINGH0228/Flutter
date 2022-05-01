@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, import_of_legacy_library_into_null_safe, unused_import, prefer_const_literals_to_create_immutables, unnecessary_null_comparison, prefer_const_constructors_in_immutables, unused_label
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, import_of_legacy_library_into_null_safe, unused_import, prefer_const_literals_to_create_immutables, unnecessary_null_comparison, prefer_const_constructors_in_immutables, unused_label, deprecated_member_use
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: context.cardColor,
+        backgroundColor: context.canvasColor,
         floatingActionButton: FloatingActionButton(
           onPressed: () => Navigator.pushNamed(context, MyRoutes.cartRoute),
           backgroundColor: context.theme.buttonColor,
