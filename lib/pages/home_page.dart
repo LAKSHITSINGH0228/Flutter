@@ -6,10 +6,10 @@ import 'package:flutter/services.dart';
 import 'dart:convert';
 import 'package:flutter_catalog/models/catalog.dart';
 import 'package:flutter_catalog/pages/cart_page.dart';
+import 'package:flutter_catalog/pages/home_widgets/catalog_header.dart';
+import 'package:flutter_catalog/pages/home_widgets/catalog_list.dart';
 import 'package:flutter_catalog/utils/routes.dart';
 import 'package:flutter_catalog/widgets/drawer.dart';
-import 'package:flutter_catalog/widgets/home_widgets/catalog_header.dart';
-import 'package:flutter_catalog/widgets/home_widgets/catalog_list.dart';
 import 'package:flutter_catalog/widgets/themes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
