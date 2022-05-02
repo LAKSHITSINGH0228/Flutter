@@ -11,12 +11,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 void main() {
-  runApp(
-    VxState(
-      store: MyStore(),
-      child: MyApp(),
-    ),
-  );
+  runApp(VxState(store: MyStore(), child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
